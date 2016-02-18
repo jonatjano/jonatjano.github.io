@@ -190,7 +190,7 @@ imgCase[0].onload = affichageTerrainCombat();
 
 	function mortJoueur()
 	{
-		alert("t'es mort, tu auras plus de chance la prochaine fois");
+		timeOutInterval = [];
 		alert("tu as reussi a tuer " + monstreCombat[0][5] + " monstres")
 		for (var i = 0; i < joueur.length; i++) {
 			map[joueur[i][0]][joueur[i][1]][1] = Math.abs(map[joueur[i][0]][joueur[i][1]][1]);
@@ -198,12 +198,6 @@ imgCase[0].onload = affichageTerrainCombat();
 		for (var i = 0; i < monstreCombat.length; i++) {
 			map[monstreCombat[i][0]][monstreCombat[i][1]][1] = Math.abs(map[monstreCombat[i][0]][monstreCombat[i][1]][1]);
 		}
-		joueur[0][0] = 8;
-		joueur[0][1] = 1;
-		joueur[0][4] += 5;
-		monstreCombat[0][0] = 15;
-		monstreCombat[0][1] = 22;
-		monstreCombat[0][2] = monstreCombat[0][3];
 		affichageTerrainCombat();
 		affichageRecapitulatif();
 		return joueur[0][2] - joueur[0][3];
@@ -211,6 +205,7 @@ imgCase[0].onload = affichageTerrainCombat();
 
 	function mortMonstre()
 	{
+		timeOutInterval = [];
 		alert("Tu l'as éclaté super, maintenant plus dur");
 		for (var i = 0; i < joueur.length; i++) {
 			map[joueur[i][0]][joueur[i][1]][1] = Math.abs(map[joueur[i][0]][joueur[i][1]][1]);
@@ -218,25 +213,18 @@ imgCase[0].onload = affichageTerrainCombat();
 		for (var i = 0; i < monstreCombat.length; i++) {
 			map[monstreCombat[i][0]][monstreCombat[i][1]][1] = Math.abs(map[monstreCombat[i][0]][monstreCombat[i][1]][1]);
 		}
-		joueur[0][0] = 8;
-		joueur[0][1] = 1;
-		joueur[0][2] = joueur[0][3];
 		for (var i = 0; i < monstreCombat.length; i++) {
 			monstreCombat[i][0] = 15 - i;
 			monstreCombat[i][1] = 22 - i;
 		}
-		monstreCombat[0][3] += 5;
-		monstreCombat[0][5] += 1;
-		monstreCombat[0][4] += (monstreCombat[0][5] % 2 == 0)? 1: 0
-		monstreCombat[0][6] += (monstreCombat[0][6] < 4)? 1 : 0;
 		affichageTerrainCombat();
 		affichageRecapitulatif();
-		return monstreCombat[0][2] - monstreCombat[0][3];
+		return 0;
 	}
 
 	for (var i = 0; i < monstreCombat.length; i++) {
-		timeOutInterval[1] = window.setInterval(attaqueMonstre, 500, i);
-		timeOutInterval[2] = window.setInterval(mouvementMonstre, 500 - 50 * i, i);
+		timeOutInterval[2i] = window.setInterval(attaqueMonstre, 500, i);
+		timeOutInterval[2i+1] = window.setInterval(mouvementMonstre, 500 - 50 * i, i);
 	}
 
 	document.addEventListener('keydown', function(event) {
