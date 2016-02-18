@@ -221,7 +221,7 @@ imgCase[0].onload = affichageTerrainCombat();
 		monstreCombat = [];
 		affichageTerrainCombat();
 		affichageRecapitulatif();
-		return monstreCombat[0][2] - monstreCombat[0][3];
+		return 0;
 	}
 
 	for (var i = 0; i < monstreCombat.length; i++) {
