@@ -236,8 +236,8 @@ imgCase[0].onload = affichageTerrainCombat();
 	}
 
 	for (var i = 0; i < monstreCombat.length; i++) {
-		timeOutInterval[2i] = window.setInterval(attaqueMonstre, 500, i);
-		timeOutInterval[2i + 1] = window.setInterval(mouvementMonstre, 500 - 50 * i, i);
+		timeOutInterval[2 * i] = window.setInterval(attaqueMonstre, 500, i);
+		timeOutInterval[2 * i + 1] = window.setInterval(mouvementMonstre, 500 - 50 * i, i);
 	}
 
 	document.addEventListener('keydown', function(event) {
