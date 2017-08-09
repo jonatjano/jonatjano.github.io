@@ -96,9 +96,15 @@ function affichageRecapitulatif()
 		canvas.drawImage(imgArme[sort[idJoueur][joueur[0][4]][0]], 1111 + 1 * 58, 140);
 	}
 
+	canvas.font = "15px serif";
 	canvas.fillText("Move using arrows", 1111, 400);
-	canvas.fillText("use Z, Q, S and D to attack", 1111, 450);
-	canvas.fillText("use A and E to change weapon", 1111, 500);
-	canvas.fillText("each weapon has it's range and power", 1111, 550);
-	canvas.fillText("have fun :p", 1111, 600);
+	canvas.fillText("use Z, Q, S and D", 1111, 430);
+	canvas.fillText("to attack", 1111, 445);
+	canvas.fillText("use A and E", 1111, 475);
+	canvas.fillText("to change weapon", 1111, 490);
+	canvas.fillText("each weapon has", 1111, 510);
+	canvas.fillText("it's range and power", 1111, 525);
+	canvas.fillText("have fun :p", 1111, 555);
+
+	canvas.font = "20px serif";
 }
