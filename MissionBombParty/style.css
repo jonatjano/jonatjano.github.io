@@ -1,0 +1,83 @@
+td
+{
+	border: 15px #555 solid;				/*Bordure d'épaisseur 15 pixels de couleur #555*/
+	border-style: inset;						/*Bordure donnant une impression de renfoncement*/
+}
+table
+{
+	margin-left: 20%;							/*Déplacement de 20% depuis la marge droite de la page*/
+	border: 45px solid black;				/*Bordure noire d'épaisseur 45 pixels */
+	border-radius: 10px;						/*Bordure arrondi de 10px*/
+	border-style: outset;					/*Donne l'impression que la bordure ressort*/
+	box-shadow: 15px 15px 5px #2D2D2D;	/*Ombre de 15px sur l'axe x et y avec 5px de flou de couleur #2D2D2D*/
+	background-color: black;				/*Fond noir*/
+}
+h1
+{
+	text-align: center;						/*Texte centré*/
+	font-size: 40px;							/*Texte de taille 40px*/
+	font-family: Impact, serif;			/*Police du texte en Impact et sinon en normale*/
+}
+canvas
+{
+	display: block;							/*L'élément génère une boîte en bloc*/
+}
+div
+{
+	border: 4px solid black;				/*Bordure noire d'épaisseur 15 pixels*/
+	width: 1000px;								/*Largeur de 1000px*/
+	height: 600px;								/*Hauteur de 600px*/
+	text-align: center;						/*Texte centré*/
+	font-size: 41px;							/*Texte de taille 41px*/
+	margin-left: 18%;							/*Déplacement de 17% depuis la marge gauche de la page*/
+	margin-top: 1%;							/*Déplacement de 1% depuis le haut de la page*/
+	padding-top: 5px;							/*Déplacement de 5px depuis la bordure de la div*/
+	background: url("nuclear.jpg") no-repeat;		/*Fond possédant l'image "nuclear.jpg" qui n'est pas répété*/
+	background-size: cover;					/*L'image remplie toute la div*/
+	color: white;								/*Couleur du texte en blanc*/
+	position: absolute;						/*Permet de placer un élément n'importe où sur la page*/
+	font-family: Impact, serif;			/*Police du texte en Impact et sinon en normale*/
+	visibility: hidden;						/*Balise non visible*/
+}
+
+/*/////INFOBULLE/////*/
+
+img
+{
+	float: left;								/*Position en haut à gauche*/
+}
+a.infobulle
+{
+	float: left;								/*Position en haut à gauche*/
+	position:relative;						/*Position relatif*/
+}
+a.infobulle span
+{
+	display: none;								/*Élément non affiché*/
+}
+a.infobulle:hover span
+{
+	display:inline;							/*Élément d'un ligne, se place à coté des autres*/
+	position:absolute;						/*Permet de placer un élément n'importe ou sur la page*/
+	top:5px;										/*Écart de 5px par rapport au haut de la page*/
+	border:5px solid black;					/* Bordure noire d'épaisseur 5 pixels */
+	border-style: groove;					/*Bordure qui donne l'impression qu'elle a été gravée*/
+	padding:5px;
+	width: 10000%;								/*Largeur de l'élément de 1450px*/
+	max-width: 1000px;
+	font-size: 25px;							/*Texte de taille 25px*/
+	font-family: serif;						/*Police du texte en Impact et sinon en normale*/
+	background: url("texture.jpg");		/*Fond possédant l'image "texture.jpg"*/
+	background-size: cover;					/*L'image remplie tout l'élément*/
+	text-align: left;							/*Texte aligné à droite*/
+}
+.titre
+{
+	font-weight: bold;						/*Texte mis en gras*/
+	text-align: center;						/*Texte centré*/
+}
+.module
+{
+	font-weight: bold;						/*Texte mis en gras*/
+	text-decoration: underline;			/*Texte souligné*/
+}
