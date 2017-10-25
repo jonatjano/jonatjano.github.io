@@ -1,12 +1,6 @@
-body
-{
-	background-color: #000000;
-	color: #FFBA27;
-}
-
 h1
 {
-	color: #C89934;
+	background-color: #0099AA;
 	text-align: center;
 }
 
@@ -23,15 +17,6 @@ img
 
 .rules
 {
-	color: #D93345;
-}
-
-a
-{
-	color: #D93345;
-}
-
-a:visited
-{
-	color: #C89934;
+	font-weight: bold;
+	color: #333333;
 }
