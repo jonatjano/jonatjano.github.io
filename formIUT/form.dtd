@@ -1,0 +1,94 @@
+<!ELEMENT form (fenetre|window)>
+	<!ELEMENT fenetre (label|texte|menu|case|tableau|boutons|calendrier)+>
+		<!ATTLIST fenetre longueur CDATA #REQUIRED
+		                  largeur  CDATA #REQUIRED
+		                  titre    CDATA #REQUIRED
+		                  x        CDATA #REQUIRED
+		                  y        CDATA #REQUIRED>
+		<!ELEMENT texte EMPTY>
+			<!ATTLIST texte type  ( chaine | entier | double | caractere )  #REQUIRED
+			                label CDATA #REQUIRED
+			                id    ID    #REQUIRED
+			                x     CDATA #IMPLIED
+			                y     CDATA #IMPLIED >
+		<!ELEMENT menu (choix*)>
+			<!ATTLIST menu id    ID    #REQUIRED
+			               label CDATA #REQUIRED
+			               x     CDATA #IMPLIED
+			               y     CDATA #IMPLIED >
+			<!ELEMENT choix EMPTY>
+				<!ATTLIST choix label    CDATA #REQUIRED >
+		<!ELEMENT case EMPTY>
+			<!ATTLIST case label CDATA #REQUIRED
+			               id    ID    #REQUIRED
+			               x     CDATA #IMPLIED
+			               y     CDATA #IMPLIED >
+		<!ELEMENT tableau EMPTY>
+			<!ATTLIST tableau label  CDATA #REQUIRED
+			                  id     ID    #REQUIRED
+			                  type   ( chaine | entier | double | booleen | caractere ) #REQUIRED
+			                  nb_lig CDATA #REQUIRED
+			                  nb_col CDATA #REQUIRED
+			                  x      CDATA #IMPLIED
+			                  y      CDATA #IMPLIED >
+		<!ELEMENT boutons (bouton+)>
+			<!ATTLIST boutons label  CDATA #REQUIRED
+			                  id     CDATA #REQUIRED
+			                  x      CDATA #IMPLIED
+			                  y      CDATA #IMPLIED >
+			<!ELEMENT bouton (#PCDATA)>
+				<!ATTLIST bouton ordinal    CDATA #REQUIRED >
+		<!ELEMENT calendrier EMPTY>
+			<!ATTLIST calendrier label CDATA #REQUIRED
+			                     id    ID    #REQUIRED
+			                     x     CDATA #IMPLIED
+			                     y     CDATA #IMPLIED >
+	<!ELEMENT window (label|text|dropdown|checkbox|array|buttons|calendar)+>
+		<!ATTLIST window length CDATA #REQUIRED
+		                 width  CDATA #REQUIRED
+		                 title  CDATA #REQUIRED
+		                 x      CDATA #REQUIRED
+		                 y      CDATA #REQUIRED>
+			<!ELEMENT text (#PCDATA)>
+				<!ATTLIST text type  ( string | int | double | char ) #REQUIRED
+				               label CDATA #REQUIRED
+				               id    ID    #REQUIRED
+				               x     CDATA #IMPLIED
+				               y     CDATA #IMPLIED >
+		<!ELEMENT dropdown (choice*)>
+			<!ATTLIST dropdown id    ID	  #REQUIRED
+			                   label CDATA #REQUIRED
+			                   x     CDATA #IMPLIED
+			                   y     CDATA #IMPLIED >
+			<!ELEMENT choice EMPTY>
+				<!ATTLIST choice label    CDATA #REQUIRED >
+		<!ELEMENT checkbox EMPTY>
+			<!ATTLIST checkbox label CDATA #REQUIRED
+			                   id    ID    #REQUIRED
+			                   x     CDATA #IMPLIED
+			                   y     CDATA #IMPLIED >
+		<!ELEMENT array EMPTY>
+			<!ATTLIST array label CDATA #REQUIRED
+			                id    ID    #REQUIRED
+			                type ( string | int | double | boolean | char ) #REQUIRED
+			                nb_row CDATA #REQUIRED
+			                nb_col CDATA #REQUIRED
+			                x      CDATA #IMPLIED
+			                y      CDATA #IMPLIED >
+		<!ELEMENT buttons (button+)>
+			<!ATTLIST buttons label  CDATA #REQUIRED
+			                  id     CDATA #REQUIRED
+			                  x      CDATA #IMPLIED
+			                  y      CDATA #IMPLIED >
+			<!ELEMENT button (#PCDATA)>
+				<!ATTLIST button ordinal    CDATA #REQUIRED >
+		<!ELEMENT calendar EMPTY>
+			<!ATTLIST calendar label CDATA #REQUIRED
+			                   id    ID    #REQUIRED
+			                   x     CDATA #IMPLIED
+			                   y     CDATA #IMPLIED >
+		<!ELEMENT label EMPTY>
+			<!ATTLIST label id    ID    #REQUIRED
+			                label CDATA #REQUIRED
+			                x     CDATA #IMPLIED
+			                y     CDATA #IMPLIED >
