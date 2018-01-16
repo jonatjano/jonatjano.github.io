@@ -5,7 +5,7 @@
 	<xsl:template match="/">
 		<html>
 			<head>
-				<link rel="stylesheet" href="preview.css"/>
+				<link rel="stylesheet" href="form.css"/>
 				<script>
 					<!-- le timeout est nécessaire car le xsl prend un peu de temps à générer la page -->
 					window.setTimeout(function()
@@ -64,7 +64,7 @@
 			<table>
 				<tr>
 					<td class="label">
-						<xsl:value-of select="./@label"/> : 
+						<xsl:value-of select="./@label"/> :
 					</td>
 					<td style="height: {@longueur}{@length}px; width: {@largeur}{@width}px;">
 						<xsl:variable name="type"><xsl:value-of select="@type"/></xsl:variable>
@@ -96,7 +96,7 @@
 			<table>
 				<tr>
 					<td class="label">
-						<xsl:value-of select="./@label"/> : 
+						<xsl:value-of select="./@label"/> :
 					</td>
 					<td style="height: {@longueur}{@length}px; width: {@largeur}{@width}px;">
 						<select name="{@label}">
@@ -117,7 +117,7 @@
 			<table>
 				<tr>
 					<td class="label">
-						<xsl:value-of select="./@label"/> : 
+						<xsl:value-of select="./@label"/> :
 					</td>
 					<td style="height: {@longueur}{@length}px; width: {@largeur}{@width}px;">
 						<input type="checkbox"/>
@@ -208,7 +208,7 @@
 			<table>
 				<tr>
 					<td class="label">
-						<xsl:value-of select="./@label"/> : 
+						<xsl:value-of select="./@label"/> :
 					</td>
 					<td style="height: {@longueur}{@length}px; width: {@largeur}{@width}px;">
 						<input class="date" type="date"/>
@@ -226,7 +226,7 @@
 		<xsl:param name="nbC"></xsl:param>
 		<xsl:param name="nbLoopR"></xsl:param>
 		<xsl:param name="type"></xsl:param>
-	
+
 		<xsl:choose>
 			<xsl:when test="$nbR &gt; 0">
 				<tr>
