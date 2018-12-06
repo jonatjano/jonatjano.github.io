@@ -1,22 +1,77 @@
-h1
-{
-	background-color: #0099AA;
+html, body {
+	margin: 0;
+	padding: 0;
+	/* background-color: #cccccc; */
+}
+
+.header {
+	display: flex;
+	background-color: royalblue;
+	padding: 2vh 20vw 2vh 20vw;
 	text-align: center;
+	flex-wrap: wrap;
 }
 
-li
-{
-	line-height: 1.5;
+h1 {
+	margin-top: 0;
+	background-color: royalblue;
+	padding: 2vh 20vw 2vh 20vw;
+	text-align: center;
+	text-decoration: none;
+	color: white;
 }
 
-img
-{
-	height: 40vh;
-	margin-left: 5%;
+.header * {
+	flex: 1;
+	text-decoration: none;
+	color: white;
 }
 
-.rules
-{
+.header span {
 	font-weight: bold;
-	color: #333333;
+}
+
+.center {
+	width: 50vw;
+	margin-left: 25vw;
+	padding: 10px;
+	background-color: white;
+}
+
+#about .center {
+	margin-top: 25vh;
+	margin-bottom: 25vh;
+}
+
+h3 {
+	color: royalblue;
+}
+
+h3::after {
+	content: ' :';
+}
+
+h3 a {
+	text-decoration: none;
+	color: royalblue;
+}
+
+h3 a::after {
+	font-family: "Font Awesome 5 Free";
+	content: '\f0c1';
+	padding-left: 5px;
+}
+
+.flexContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flexContainer > * {
+	flex: 1 0 40%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border: 1px solid #eeeeee;
+	border-radius: 15px;
 }
