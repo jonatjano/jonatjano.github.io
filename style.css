@@ -75,3 +75,7 @@ h3 a::after {
 	border: 1px solid #eeeeee;
 	border-radius: 15px;
 }
+
+hr {
+	color: royalblue;
+}
