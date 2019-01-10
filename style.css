@@ -79,3 +79,35 @@ h3 a::after {
 hr {
 	color: royalblue;
 }
+
+.skillContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.skillBlock {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid royalblue;
+	border-radius: 15px;
+}
+
+#contact {
+	padding: 10px 10% 10px 10%;
+	font-size: 250%;
+	color: white;
+	background-color: royalblue;
+	display: flex;
+	flex-direction: row;
+}
+
+#contact * {
+	flex: 1;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
