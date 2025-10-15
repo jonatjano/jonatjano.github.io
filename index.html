@@ -14,6 +14,7 @@
 			<div class="header">
 				<span>Jonathan Selle</span>
 				<a href="#about">présentation</a>
+				<a href="#projects">mes projets</a>
 				<a href="#CV">CV</a>
 				<a href="#skill">compétences</a>
 				<a href="#contact">contact</a>
@@ -23,13 +24,85 @@
 		<div id="about">
 			<h1>présentation</h1>
 			<div class="center">
-				<h3>Développeur web/software</h3>
+				<h3>Développeur fullstack</h3>
 				<p>
-					Je suis fasciné par l'informatique et cherche toujours à apprendre de nouvelles technologies et méthodes afin d'améliorer mes sites et logiciels.
+					Passionné par le développement, je suis toujours à la recherche de nouveaux défis afin d'approfondir mes connaissances.
 				</p>
-				<p>
-					Je cherche toujours à repousser mes connaissances en me donnant des defis utilisant des connaissances que je ne possède pas encore.
-				</p>
+			</div>
+		</div>
+
+		<div id="projects">
+			<h1>mes projets</h1>
+			<div class="flexContainer">
+				<div>
+					<h3>
+						<a href="https://github.com/jonatjano/empire-defense">Empire Défense</a> - en cours
+					</h3>
+					<p>
+						Réécriture en Javascript statique du jeu Android éponyme
+					</p>
+					<p>
+						Les informations du jeu n'étant pas disponible en ligne, tout ce qui est implémenté a été déduit en jouant à la version originale.
+					</p>
+				</div>
+				<div>
+					<h3>
+						<a href="https://github.com/jonatjano/HtmlBuilder">HtmlBuilder</a> - fini
+					</h3>
+					<p>
+						Bibliothèque Javascript composé de 3 parties :
+					</p>
+					<ul>
+						<li>
+							un wrapper fluent autour de l'API DOM du navigateur;
+						</li>
+						<li>
+							un object facilitant le binding bidirectionnel d'une variable entre le Javascript et le DOM;
+						</li>
+						<li>
+							une fonction permettant de parser du code HTML en DOM, celle-ci peut, graçe à l'utilisation d'attributs spécifiques, ajouter des éléments conditionnels ou encore des boucles;
+						</li>
+					</ul>
+					<p>
+						<b>Possibilité d'amélioration</b> : rendre la partie parsage plus facile d'utilisation en remplaçant les attributs de structure par des balises.
+					</p>
+				</div>
+				<div>
+					<h3>
+						<a href="https://github.com/jonatjano/hiveManager">hiveManager</a> - fini
+					</h3>
+					<p>
+						Projet PHP permettant de faciliter l'entretien d'un cheptel de ruches.
+					</p>
+					<p>
+						Ce projet écrit a été écrit à 100% via l'utilisation d'IA.
+					</p>
+				</div>
+				<div>
+					<h3>
+						<a href="https://github.com/jonatjano/typeDecoratorJs">Type decorator JS</a> - fini
+					</h3>
+					<p>
+						Bibliothèque Javascript utilisant les annotations, telles que proposées par le consortium TC39, permettant de typer ses variables et ses fonctions.
+					</p>
+					<p>
+						L'assertion se fait lors de l'exécution via des erreurs qui doivent être capturées afin d'assurer le bon fonctionnement de l'application.
+					</p>
+					<p>
+						<b>Possibilité d'amélioration</b> : mise à jour afin d'utiliser une version plus récente de la proposition
+					</p>
+				</div>
+				<div>
+					<h3>
+						<a href="https://github.com/jonatjano/unitConversion">unitConversion</a> - fini
+					</h3>
+					<p>
+						Bibliothèque Javascript permettant de définir des valeurs selon des unités physiques ainsi que de convertir entre différentes unités.
+					</p>
+					<p>
+						Les unités du Système International ainsi que des systèmes métrique et impérial sont disponibles, de plus il est facile de définir ses propres unités pour les utilisations spécifiques.
+					</p>
+				</div>
 			</div>
 		</div>
 
@@ -37,64 +110,21 @@
 			<h1>mon CV</h1>
 			<div class="center">
 
-				<h2>Expériences</h2>
+				<h2>Expérience</h2>
 				<div class="flexContainer">
 					<div>
 						<h3>
 							<a href="https://www.trace-software.com/fr/">Trace Software International</a>
 							<br>2018
 						</h3>
-						<p>
-							Job d'été faisant suite à un stage de 10 semaines.<br>
-							Implementation de tests end-to-end sur une application sous AngularJS.<br>
-							Création d'une page web permettant de modifier des svg.
-						</p>
-						<p>
-							Ce premier pas dans l'univers professionnel m'à pas permis de découvrir le travail en entreprise.
-						</p>
-					</div>
-					<div>
-						<h3>
-							<a href="http://iut.univ-littoral.fr/24h/index.php">24H des IUT informatiques</a>
-							<br>2017
-						</h3>
-						<p>
-							Une compétition amicale qui regroupe des équipes de toute la France.<br>
-							Les 24h sont séparées en 3 épreuves de 8h :<br>
-							<ul>
-								<li>une épreuve d'intelligence articielle : les IA de chaque équipes se rencontrent dans un jeu donné</li>
-								<li>une épreuve de création d'un site web : le site doit gerer la creation de compte et le lien à une base de donnée</li>
-								<li>une épreuve de sécurité : on nous donne un lien avec des enigmes de sécurité dans lequelles il faut trouver la faille</li>
-							</ul>
-						</p>
-						<p>
-							C'est une exprérience interessante puisque ce sont des sujets qui ne sont que trop peu vu en 1ère année de DUT
-						</p>
-					</div>
-					<div>
-						<h3>
-							<a href="https://fr.ulule.com/juks/">Juks</a>
-							<br>2016 - 2017
-						</h3>
-						<p>
-							Développement d'une application mobile en Ionic 2 (Angular 2 pour mobile) fonctionnant comme un réseau social pour les coureurs réguliers.
-						</p>
-						<p>
-							Ce fut ma première fois avec un framework web et nodeJS, deux technologies très populaires.
-						</p>
-					</div>
-					<div>
-						<h3>
-							<a href="https://smartharopa.com/">Hackaton Smartport</a>
-							<br>2016
-						</h3>
-						<p>
-							Création d'une application avec Ionic 2 permettant d'obtenir des informations sur les bateaux que l'on vois au loin.<br>
-							Obtention du premier prix dans la catégorie relation avec le public.
-						</p>
-						<p>
-							Il s'agit de ma première participation à un hackaton et une expérience a renouveller.
-						</p>
+						<ul>
+							<li>Transition d'une infrastructure monolithique vers une infrastructure à microservices</li>
+							<li>Développement d'un microservice de calculs d'équations personnalisées par l'utilisateur;</li>
+							<li>Validation et stockage de données et d'équations avec des unités physiques;</li>
+							<li>Maintient d'une application mobile;</li>
+							<li>Développement d'un microservice de récupération et d'extraction de données de facturation par PDF;</li>
+							<li>Mise en place de tests unitaires, de tests end-to-end et d'intégration continues;</li>
+						</ul>
 					</div>
 				</div>
 
@@ -104,9 +134,9 @@
 				<div class="flexContainer">
 					<div>
 						<h3>
-							<a href="#">Master IWOCS (Ingénierie du Web, des Objets Communicants et des Systèmes Complexes)
+							<a href="#">Master IWOCS (<b>I</b>ngénierie du <b>W</b>eb, des <b>O</b>bjets <b>C</b>ommunicants et des <b>S</b>ystèmes complexes)
 							<br>Université le Havre Normandie</a>
-							<br>2019-2020
+							<br>2019-2021
 						</h3>
 						<p>
 							<a href="https://www.univ-lehavre.fr/IMG/pdf/brochure_st_master_informatique_-_iwocs.pdf">Presentation du Master</a>
@@ -162,35 +192,37 @@
 				<div class="skillContainer">
 					<div class="skillBlock">
 						<h3>WEB</h3>
-						JavaScript : <progress value="85" max="100">85%</progress>
-						HTML5 : <progress value="70" max="100">70%</progress>
-						PHP7 : <progress value="60" max="100">60%</progress>
-						CSS3 : <progress value="50" max="100">50%</progress>
-						JSP : <progress value="25" max="100">25%</progress><br><br>
-						Angular : <progress value="65" max="100">65%</progress>
-						Slim : <progress value="20" max="100">20%</progress>
+						JavaScript : <progress value="90" max="100"></progress>
+						TypeScript : <progress value="75" max="100"></progress>
+						HTML5 : <progress value="80" max="100"></progress>
+						CSS3 : <progress value="80" max="100"></progress>
+						PHP8.4 : <progress value="80" max="100"></progress>
+						Angular : <progress value="70" max="100"></progress>
+						React : <progress value="10" max="100"></progress>
 					</div>
 					<div class="skillBlock">
 						<h3>Logiciel</h3>
-						Java : <progress value="80" max="100">80%</progress>
-						nodeJS : <progress value="50" max="100">50%</progress>
-						C : <progress value="30" max="100">30%</progress>
-						Go : <progress value="30" max="100">30%</progress>
-						C++ : <progress value="25" max="100">25%</progress>
-					</div>
-					<div class="skillBlock">
-						<h3>Mobile</h3>
-						Android : <progress value="70" max="100">70%</progress>
-						Cordova : <progress value="40" max="100">40%</progress>
-						Ionic : <progress value="40" max="100">40%</progress>
+						NodeJS : <progress value="80" max="100"></progress>
+						C : <progress value="60" max="100"></progress>
+						C++ : <progress value="70" max="100"></progress>
+						Java : <progress value="40" max="100"></progress>
+						C# : <progress value="20" max="100"></progress>
 					</div>
 					<div class="skillBlock">
 						<h3>Autre</h3>
-						SQL : <progress value="70" max="100">70%</progress>
-						Gimp : <progress value="50" max="100">50%</progress>
-						Git : <progress value="50" max="100">50%</progress>
-						Docker : <progress value="25" max="100">25%</progress>
-						LaTeX : <progress value="25" max="100">25%</progress>
+						SQL : <progress value="70" max="100"></progress>
+						NoSQL : <progress value="60" max="100"></progress>
+						Git : <progress value="80" max="100"></progress>
+						Docker : <progress value="80" max="100"></progress>
+					</div>
+					<div class="skillBlock">
+						<h3>Outils</h3>
+						suite Jetbrains : <progress value="80" max="100"></progress>
+						Github : <progress value="70" max="100"></progress>
+						Gitlab : <progress value="60" max="100"></progress>
+						Azure Devops : <progress value="50" max="100"></progress>
+						Microsoft 365 : <progress value="40" max="100"></progress>
+						Gimp : <progress value="40" max="100"></progress>
 					</div>
 				</div>
 			</div>
@@ -204,13 +236,11 @@
 
 			<span>
 				<a class="fab fa-github" href="https://github.com/jonatjano"></a>
-				<a class="fab fa-gitlab" href="https://gitlab.com/jonatjano"></a>
 				<a class="fab fa-stack-exchange" href="https://stackexchange.com/users/14056834/jonatjano?tab=top"></a>
 				<a class="fab fa-steam" href="https://steamcommunity.com/id/jonatjanoj/"></a>
-				<a class="fab fa-facebook-square" href="https://www.facebook.com/jonathan.selle.7"></a>
 			</span>
 		</div>
-
+		</div>
 		<!-- <ul>
 			<li>
 				<a href="./canvas/index.html">Canvas</a>, Il s'agit d'un petit jeu en 2D isométrique dans lequel le joueur se bat contre différents groupes de monstres.<br>

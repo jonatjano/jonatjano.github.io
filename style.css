@@ -1,3 +1,7 @@
+:root {
+	--primary-color: royalblue;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -6,7 +10,7 @@ html, body {
 
 .header {
 	display: flex;
-	background-color: royalblue;
+	background-color: var(--primary-color);
 	padding: 2vh 20vw 2vh 20vw;
 	text-align: center;
 	flex-wrap: wrap;
@@ -14,7 +18,7 @@ html, body {
 
 h1 {
 	margin-top: 0;
-	background-color: royalblue;
+	background-color: var(--primary-color);
 	padding: 2vh 20vw 2vh 20vw;
 	text-align: center;
 	text-decoration: none;
@@ -44,7 +48,7 @@ h1 {
 }
 
 h3 {
-	color: royalblue;
+	color: var(--primary-color);
 }
 
 h3::after {
@@ -53,7 +57,7 @@ h3::after {
 
 h3 a {
 	text-decoration: none;
-	color: royalblue;
+	color: var(--primary-color);
 }
 
 h3 a::after {
@@ -77,7 +81,7 @@ h3 a::after {
 }
 
 hr {
-	color: royalblue;
+	color: var(--primary-color);
 }
 
 .skillContainer {
@@ -92,7 +96,7 @@ hr {
 	flex: 1;
 	padding: 5px;
 	margin: 5px;
-	border: 1px solid royalblue;
+	border: 1px solid var(--primary-color);
 	border-radius: 15px;
 }
 
@@ -100,7 +104,7 @@ hr {
 	padding: 10px 10% 10px 10%;
 	font-size: 250%;
 	color: white;
-	background-color: royalblue;
+	background-color: var(--primary-color);
 	display: flex;
 	flex-direction: row;
 }
